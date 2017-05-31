@@ -26,9 +26,9 @@
 </script>
     <nav>
 		<ul>
-			<li><a onclick="addFavorite(this); return false;" href=""><span>Добавить<br/>в избранное</span></a></li>
-			<li><a href="<?=$link[0]; ?>"><span></span></a></li>
-			<li><a href="<?=$link[0]; ?>"><span>Наш магазин</span></a></li>
+			<li class="nav1"><a onclick="addFavorite(this); return false;" href=""><span>Добавить<br/>в избранное</span></a></li>
+			<li class="nav2"><a href="<?=$link[0]; ?>"><span></span></a></li>
+			<li class="nav2"><a href="<?=$link[0]; ?>"><span>Наш магазин</span></a></li>
 			<li><a href="<?=$link[2]; ?>"><span>Доставка</span></a></li>
 			<li class="rasp"><a href="<?=$link[3]; ?>"><span>Распродажи</span></a></li>
 			<li class="actii"><a href="<?=$link[4]; ?>"><span>Акции</span></a></li>
