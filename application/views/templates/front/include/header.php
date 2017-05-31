@@ -1,10 +1,13 @@
 <body>
-<div id="page-wrapper" style="max-width: <?= $pw ?>px;">
+<div id="page-wrapper">
 	<header>
 		<div class="head-info-wrap">
 			<div class="head-info">
 				<div class="head-info-holder">
 					<div class="head-contacts">
+						<div class="mobile-trash">
+							<a href="/basket" class="">Корзина</a>							
+						</div>
 						<div class="head-phones">
 							<?= $phones ?>
 						</div>
