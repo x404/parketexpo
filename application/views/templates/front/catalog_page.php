@@ -5,8 +5,11 @@
 	<title><?=$head['title']; ?></title>
     <meta name='description' content='<?=$head['meta_d']; ?>' />
 	<meta name='keywords' content='<?=$head['meta_k']; ?>' />        
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="/css/all.css">
 	<link rel="stylesheet" href="/css/form.css">
+	<link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/tip-violet/tip-violet.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
@@ -26,10 +29,12 @@
     
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
-    <script src="/js/script_catalog.js"></script>    
+    <script src="/js/script_catalog.js"></script>   
+    <script src="/js/engine.js"></script>
 	<script type="text/javascript">    
     <?=$this->catalog_page->js_build_info(); ?>
-	</script> 
+	</script>
+
 </head>
 
 <? $this->load->view('templates/front/include/header',$header); ?>
