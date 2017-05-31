@@ -773,9 +773,11 @@ article{
 	transition: all 0.2s linear;
 	display: block;
 	border-radius: 12px;
-	background: url(../img/images/item-list-a2.png) no-repeat;
+	// background: url(../img/images/item-list-a2.png) no-repeat;
 	
-	behavior: url(/css/PIE.htc);
+	// behavior: url(/css/PIE.htc);
+
+	background: #f4f1f0;
 	position: relative;
 }
 .item-list a:hover img{

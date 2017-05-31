@@ -5,6 +5,7 @@
 	<title><?= $head['title']; ?></title>
 	<meta name='description' content='<?= $head['meta_d']; ?>' />
 	<meta name='keywords' content='<?= $head['meta_k']; ?>' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="/css/all.css">
 	<link rel="stylesheet" href="/css/responsive.css">
