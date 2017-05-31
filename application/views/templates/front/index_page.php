@@ -14,6 +14,7 @@
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
 	<script src="/js/jquery-1.9.1.min.js"></script>
 	<script src="/js/placeholder.js"></script>
+	<script src="/js/engine.js"></script>
 	<script>
 	
 	$(document).ready(function() {
@@ -39,12 +40,13 @@
 			$(this).closest('li').find("ul").slideToggle("fast");
 			$(this).closest('li').toggleClass("opened");
 		});
-		
-		if ($.browser.msie && $.browser.version == 10) {
-			$("html").addClass("ie10");
-		}
 	});
 	</script>
+
+<!--[if !IE]><!-->
+<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+<!--<![endif]-->
+
 </head>
 <? $this->load->view('templates/front/include/header', $header); ?>
 <? $this->load->view('templates/front/include/top_nav', $top_nav); ?>

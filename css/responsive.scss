@@ -1,11 +1,98 @@
-.main
-{
-	// display: none;
-}
-
 .mobile-trash{
 	display: none;
 }
+
+.navbar-toggle{
+	background: rgba(255, 255 ,255, .6);
+	border-radius: 2px;
+	border: none;
+	display: none;
+	cursor: pointer;
+	height: 34px;
+	position: fixed;
+	right: 5px;
+	text-align: center;
+	top: 5px;
+	width: 34px;
+	z-index: 99;
+	outline: none;
+	.icon-bar{
+		display: block;
+		height: 3px;
+		width: 24px;
+		background-color: #797979;
+		margin: 5px auto;
+	}
+
+	&:hover{
+		.icon-bar{
+			background-color: #000;
+		}
+	}
+
+	&:active{
+		outline: none;
+	}
+}
+
+
+.mobile-header{
+	background: #fff;
+	font-size: 18px;
+	left: 0;
+	display: none;
+	padding: 10px 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 98;
+	box-shadow: 0 5px 15px #ccc;
+
+	.metro{
+		font-size: 18px;
+		span{
+			background: url(../img/images/metro.gif) no-repeat left 5px;
+			display: inline-block;
+			font-weight: bold;
+			height: 28px;
+			padding-left: 40px;
+			padding-top: 8px;
+		}
+	}
+
+	.phones{
+		margin-bottom: 15px;
+		p{
+			font-size: 13px;
+			margin-bottom: 4px;
+		}
+		a{
+			color: #555;
+			display: block;
+			font-size: 18px;
+			text-decoration: none;
+			margin-bottom: 2px;
+			strong{
+				color: #000;				
+			}
+		}
+	}
+
+	.contacts p,
+	.email a{
+		color: #41900a;
+	}
+
+	.address,
+	.contacts{
+		margin: 15px 0;
+	}
+	.contacts a{
+		color: #000;
+	}
+}
+
 
 @media (min-width: 1600px){
 	body{
@@ -330,6 +417,9 @@
 
 
 @media (max-width: 755px){
+	header .head-icons{
+		display: none;
+	}
 	.head-icons,
 	.footer-nav li:last-child{
 		display: none;
@@ -342,9 +432,6 @@
 
 
 @media (max-width: 730px){
-	header .head-icons{
-		display: none;
-	}
 }
 
 
@@ -485,6 +572,21 @@
 		}
 	}
 }
+
+
+
+@media (max-width: 515px){
+	nav,
+	header .head-phones
+	{
+		display: none;
+	}
+
+	.navbar-toggle{
+		display: block;
+	}
+}
+
 
 
 @media (max-width: 450px){

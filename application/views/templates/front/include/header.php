@@ -98,3 +98,30 @@
             </script>
 		</div>
 	</header>
+
+	<button type="button" class="navbar-toggle">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+	<div class="mobile-header">
+		<div class="metro"><span>Профсоюзная</span></div>
+		<div class="phones">
+			<p>Телефоны в Москве</p>
+			<a href="tel:84957199380" title="">8(495) <strong>719-93-80</strong></a>
+			<a href="tel:84957486027" title="">8(495) <strong>748-60-27</strong></a>
+		</div>
+		<div class="email">
+			<a href="mailto:malibox@parketexpo.ru">malibox@parketexpo.ru</a>
+		</div>
+		<div class="address">
+			Нахимовский проспект, д.24 <br>
+			Торговый комплекс "Экспострой", <br>
+			Павильон 3, линия 14, место 498. 
+		</div>
+		<div class="contacts">
+			<a href="#">Контакты</a>
+			<p>Если потерялись, звоните, встретим!</p>
+		</div>
+	</div>
