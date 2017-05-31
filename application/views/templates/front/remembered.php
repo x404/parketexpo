@@ -1,3 +1,25 @@
+<?
+    function rus_ending($osnovanie, $num)
+    {
+        $ends = array('one' => '', 'more' => 'а', 'many' => 'ов');
+        $res = $num . ' ' . $osnovanie . $ends['many'];
+        $n = $num % 100;
+
+        if(($n < 10 OR $n > 20) AND $n % 10 == 1)
+        {
+            $res = $num . ' ' . $osnovanie . $ends['one'];    
+        }
+        else
+        {
+            if(($n < 10 OR $n > 20) AND ($n % 10 > 1 AND $n % 10 < 5))
+            {
+                $res = $num . ' ' . $osnovanie . $ends['more'];     
+            }    
+        }
+
+        return $res;
+    }
+?>
 <!DOCTYPE HTML>
 <html lang=ru>
 <head>
