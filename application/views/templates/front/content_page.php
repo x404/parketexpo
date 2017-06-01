@@ -24,9 +24,6 @@
 	<script src="/js/engine.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function() {
-		if ($.browser.msie && $.browser.version == 10) {
-  			$("html").addClass("ie10");
-		}
 		$('input, textarea').placeholder();
 		$("ul.filist li:nth-child(even)").addClass("odd");
 		$("table tbody tr:nth-child(even)").addClass("odd-tr");
@@ -76,6 +73,10 @@
 		jcf.customForms.replaceAll();
 	});
 	</script>
+
+	<!--[if !IE]><!-->
+	<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+	<!--<![endif]-->
 </head>
 <? $this->load->view('templates/front/include/header',$header); ?>
 <? $this->load->view('templates/front/include/top_nav',$top_nav); ?>

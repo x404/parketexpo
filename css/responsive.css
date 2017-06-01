@@ -718,6 +718,10 @@ footer .footer-soc {
   .boxed-content {
     margin-left: 20px;
   }
+  .guide-list .right-block {
+    float: none;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1136,6 +1140,7 @@ footer .footer-soc {
     width: 86px;
   }
   .boxed .boxed-title h1 {
+    line-height: 1.2;
     font-size: 22px;
   }
 }
