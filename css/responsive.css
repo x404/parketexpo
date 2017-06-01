@@ -199,6 +199,49 @@ footer .footer-soc {
   }
 }
 
+@media (max-width: 1260px) {
+  .brand-list {
+    min-width: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1250px) {
+  .tov-info-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tov-info-wrap .title-wrap {
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .tov-info-wrap .tov-info {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .tov-info-wrap .tov-info br {
+    display: none;
+  }
+  .tov-info-wrap .item-zakaz {
+    margin-top: 10px;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cat-spisok .item-zakaz {
+    padding-top: 0;
+  }
+  .cat-spisok .item-zakaz br {
+    display: none;
+  }
+}
+
 @media (max-width: 1220px) {
   #search_form {
     display: none;
@@ -226,6 +269,29 @@ footer .footer-soc {
   }
   .footer-box {
     width: calc(100% - 26px);
+  }
+}
+
+@media (max-width: 1150px) {
+  .cat-spisok .title {
+    margin-right: 5px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1080px) {
+  .cat-spisok .item-images {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cat-spisok .tov-info-wrap {
+    margin-left: 0;
+  }
+  .cat-spisok .tov-info-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 }
 
@@ -634,6 +700,12 @@ footer .footer-soc {
     float: none;
     margin-top: 20px;
   }
+  .cat-spisok .tov-info-wrap {
+    width: 89%;
+  }
+  .cat-spisok .carouselo-c div.thumbnails img {
+    width: 32%;
+  }
 }
 
 @media (max-width: 415px) {
@@ -674,11 +746,17 @@ footer .footer-soc {
   .mobile-banners {
     margin-top: 20px;
   }
+  .cat-spisok .item-images {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 340px) {
   header .head-info-holder {
     padding-top: 10px;
+  }
+  .cat-spisok .carouselo-c div.thumbnails img {
+    width: 31.8%;
   }
 }
 
@@ -692,5 +770,12 @@ footer .footer-soc {
   #page-wrapper {
     min-width: 0;
     max-width: 100%;
+  }
+  .cat-spisok .image img {
+    max-width: 98%;
+    height: auto;
+  }
+  .cat-spisok .carouselo-c div.slide {
+    width: 285px !important;
   }
 }

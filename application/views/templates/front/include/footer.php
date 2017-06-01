@@ -28,16 +28,16 @@
 					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;width=100&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
 					</div>
 					-->
+
+					<!--
 					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.parketexpo.ru%2F&amp;width=100&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>
 					</div>
-					<div class="soc-item"><!-- Put this script tag to the <head> of your page -->
+					<div class="soc-item">
 						<script type="text/javascript" src="//vk.com/js/api/openapi.js?99"></script>
 
 						<script type="text/javascript">
 						  VK.init({apiId: 3853975, onlyWidgets: true});
 						</script>
-
-						<!-- Put this div tag to the place, where the Like block will be -->
 						<div id="vk_like"></div>
 						<script type="text/javascript">
 						VK.Widgets.Like("vk_like", {type: "mini", height: 20});
@@ -45,6 +45,7 @@
 					</div>
 					<div class="soc-item"><a href="https://twitter.com/share" class="twitter-share-button" data-text="Магазин Паркетной доски в Москве" data-lang="ru">Твитнуть</a></div>
 					<div class="soc-item gplus"><g:plusone></g:plusone></div>
+					-->
 				</div>
 
 			</div>
