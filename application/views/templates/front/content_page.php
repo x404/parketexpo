@@ -5,8 +5,11 @@
 	<title><?=$head['title']; ?></title>
     <meta name='description' content='<?=$head['meta_d']; ?>' />
 	<meta name='keywords' content='<?=$head['meta_k']; ?>' />        
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />   
 	<link rel="stylesheet" href="/css/all.css">
 	<link rel="stylesheet" href="/css/form.css">
+	<link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
@@ -18,6 +21,7 @@
 	<script src="/js/jcf.select.js"></script>
 	<link rel="stylesheet" href="/js/fancybox/jquery.fancybox-1.3.4.css">
 	<script src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="/js/engine.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function() {
 		if ($.browser.msie && $.browser.version == 10) {
