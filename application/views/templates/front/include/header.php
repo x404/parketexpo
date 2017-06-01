@@ -5,11 +5,11 @@
 			<div class="head-info">
 				<div class="head-info-holder">
 					<div class="head-contacts">
-						<div class="mobile-trash">
-							<a href="/basket" class="">Корзина</a>							
-						</div>
 						<div class="head-phones">
 							<?= $phones ?>
+						</div>
+						<div class="mobile-trash">
+							<a href="/basket" class="">Корзина</a>
 						</div>
 						<div class="head-grafik">
 							<?= $timetable ?>

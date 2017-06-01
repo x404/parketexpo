@@ -2,8 +2,12 @@
 	// display: none;
 }
 
+.flexbox{
+	display: flex;
+}
 
-.mobile-trash{
+.mobile-trash,
+.mobile-banners{
 	display: none;
 }
 
@@ -11,16 +15,16 @@
 	background: rgba(255, 255 ,255, .6);
 	border-radius: 2px;
 	border: none;
-	display: none;
 	cursor: pointer;
+	display: none;
 	height: 34px;
+	outline: none;
 	position: fixed;
-	right: 5px;
+	right: 10px;
 	text-align: center;
 	top: 5px;
 	width: 34px;
 	z-index: 99;
-	outline: none;
 	.icon-bar{
 		display: block;
 		height: 3px;
@@ -40,6 +44,23 @@
 	}
 }
 
+
+
+footer{
+	.footer-box{
+		background: none;
+	}
+	.footer-nav{
+		border-bottom: 1px solid #dedede;
+		padding-bottom: 33px;
+	}
+	.footer-soc{
+		background: url(../img/images/bg-footer-bottom.png) repeat-x center bottom;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+	}
+}
 
 .mobile-header{
 	background: #fff;
@@ -403,7 +424,7 @@
 	.mobile-trash{
 		display: block;
 		float: right;
-		margin-bottom: 10px;
+		margin-top: 10px;
 		text-align: right;
 		a{
 			color: #000;
@@ -450,10 +471,39 @@
 	.footer-nav li:nth-last-child(2){
 		margin-right: 20px;
 	}
+
+
+	// footer
+	footer{
+		.flexbox{
+			justify-content: space-between;
+		}
+		.footer-nav{
+			padding-bottom: 40px;
+		}
+	}
+	.footer-soc{
+		.title{
+			display: block;
+			float: none;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+		.soc-item{
+			padding-right: 0;
+		}
+	}
 }
 
 
 @media (max-width: 730px){
+}
+
+
+@media (max-width: 670px){
+	.footer-soc .soc-item.gplus{
+		padding-right: 0;
+	}
 }
 
 
@@ -471,10 +521,16 @@
 		flex-direction: column;
 		.left-sidebar{
 			margin-left: 0;
-			order: 0;
+			order: 2;
 		}
 		.content-wrapper{
 			order: 1;
+		}
+
+		.content{
+			article{
+				padding-bottom: 0;
+			}
 		}
 	}
 
@@ -485,8 +541,11 @@
 	}
 
 
-	.text-banner{
-		width: 211px;		
+	aside.left-sidebar{
+		.text-banner{
+			// width: 211px;
+			display: none;
+		}
 	}
 
 
@@ -505,6 +564,18 @@
 		padding-bottom: 46px;
 		.filt-set{
 			background: #f7f5f4;
+		}
+	}
+
+	// mobile banner
+	.mobile-banners{
+		display: block;
+		text-align: center;
+		.text-banner{
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 	}
 }
@@ -544,10 +615,12 @@
 				padding-top: 0;
 			}
 			&-phones{
+				float: none;
 				text-align: center;
 			}
 		}
 	}
+
 
 	.mobile-trash{
 		float: none;
@@ -559,6 +632,7 @@
 
 
 @media (max-width: 540px){
+	// footer
 	.footer-box{
 		background: none;
 	}
@@ -574,11 +648,11 @@
 		.soc-item{
 			display: block;
 			float: none;
+			margin-bottom: 10px;
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 10px;
-			text-align: center;
 			padding-right: 0;
+			text-align: center;
 		}
 	}
 
@@ -589,7 +663,6 @@
 
 	.footer-bottom{
 		display: block;
-
 		.mailto,
 		.copy{
 			display: block;
@@ -601,6 +674,14 @@
 
 		.copy{
 			margin-top: 1rem;
+		}
+	}
+
+	footer .flexbox{
+		display: block;
+		#vk_like{
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
@@ -714,6 +795,10 @@
 				width: 93px;
 			}
 		}
+	}
+
+	.mobile-banners{
+		margin-top: 20px;
 	}
 }
 
