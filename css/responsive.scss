@@ -17,13 +17,13 @@
 	border: none;
 	cursor: pointer;
 	display: none;
-	height: 34px;
+	height: 40px;
 	outline: none;
 	position: fixed;
 	right: 10px;
 	text-align: center;
 	top: 5px;
-	width: 34px;
+	width: 40px;
 	z-index: 99;
 	.icon-bar{
 		display: block;
@@ -221,9 +221,6 @@ footer{
 @media (max-width: 1260px){
 	// catalog brands
 	.brand-list{
-		// display: flex;
-		// flex-wrap: wrap;
-		// width: 100%;
 		min-width: 0;
 		text-align: center;
 	}
@@ -584,7 +581,10 @@ footer{
 
 @media (max-width: 660px){
 	nav ul a{
-		font-size: 24px;
+		font-size: 21px;
+		span{
+			padding-top: 9px;
+		}
 	}
 
 	.footer-nav li:nth-last-child(2){
@@ -621,6 +621,11 @@ footer{
 			// width: 211px;
 			display: none;
 		}
+	}
+
+	.sub-nav ul a{
+		background-repeat: repeat-x;
+		width: 97%;
 	}
 
 

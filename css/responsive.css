@@ -15,13 +15,13 @@
   border: none;
   cursor: pointer;
   display: none;
-  height: 34px;
+  height: 40px;
   outline: none;
   position: fixed;
   right: 10px;
   text-align: center;
   top: 5px;
-  width: 34px;
+  width: 40px;
   z-index: 99;
 }
 
@@ -489,7 +489,10 @@ footer .footer-soc {
 
 @media (max-width: 660px) {
   nav ul a {
-    font-size: 24px;
+    font-size: 21px;
+  }
+  nav ul a span {
+    padding-top: 9px;
   }
   .footer-nav li:nth-last-child(2) {
     display: none;
@@ -523,6 +526,10 @@ footer .footer-soc {
   }
   aside.left-sidebar .text-banner {
     display: none;
+  }
+  .sub-nav ul a {
+    background-repeat: repeat-x;
+    width: 97%;
   }
   .text-banner,
   aside .login-form {

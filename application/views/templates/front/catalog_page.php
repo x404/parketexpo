@@ -50,9 +50,7 @@
 					<h1><?=$h1; ?></h1>
 					<?=$top_text; ?>
 				</article>
-                
-
-                
+                                
 				<div class="conf-panel">
 					<div class="conf-buttons">
 						<strong class="conf-title">Отображение</strong>
