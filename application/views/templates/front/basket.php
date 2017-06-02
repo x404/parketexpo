@@ -4,9 +4,12 @@
 	<meta http-equiv='content-type' content='text/html; charset=utf-8' />
 	<title><?=$head['title']; ?></title>
     <meta name='description' content='<?=$head['meta_d']; ?>' />
-	<meta name='keywords' content='<?=$head['meta_k']; ?>' />        
+	<meta name='keywords' content='<?=$head['meta_k']; ?>' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />     
 	<link rel="stylesheet" href="/css/all.css">
 	<link rel="stylesheet" href="/css/form.css">
+	<link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
@@ -20,13 +23,14 @@
     <script src="/js/script.js"></script>
     <script src="/js/script_catalog.js"></script>
 	<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="/js/engine.js"></script>
 
 </head>
 <? $this->load->view('templates/front/include/header',$header); ?>
 <? $this->load->view('templates/front/include/top_nav',$top_nav); ?>
 
 
-	<div class="main">
+	<div class="main basket_page">
 		<div class="content-wrapper">
 			<section class="content">
                 <?=$breadcrumbs; ?>
@@ -55,83 +59,85 @@
 								</div>
 							</div>
 							<div class="table-over">
-								<table class="table backet">
-									<thead>
-										<tr>
-											<td>Фото</td>
-											<td class="desc">Название</td>
-											<td>Кол-во</td>
-											<td>Цена</td>
-											<td>Стоимость</td>
-											<td>Удалить</td>
-										</tr>
-									</thead>
-									<tbody>
+								<div class="table-responsive">
+									<table class="table backet">
+										<thead>
+											<tr>
+												<td>Фото</td>
+												<td class="desc">Название</td>
+												<td>Кол-во</td>
+												<td>Цена</td>
+												<td>Стоимость</td>
+												<td>Удалить</td>
+											</tr>
+										</thead>
+										<tbody>
 
 
-									<? if($itemsRows) : ?>
-				                		<? foreach($itemsRows as $row) : ?>
-		                                	<?= $row ?>
-										<? endforeach; ?>
-					                <? endif; ?>
+										<? if($itemsRows) : ?>
+					                		<? foreach($itemsRows as $row) : ?>
+			                                	<?= $row ?>
+											<? endforeach; ?>
+						                <? endif; ?>
 
 
 
-									<? if (false): ?>
-                                    <? foreach($basket as $b) : ?>
-                                    <?php $item = $b['data']; ?>
-									<?php
-                                    $lnk = '/';
-                                    if($b['cid'] == 3) $lnk .= 'parketnaya_doska/';
-                                    if($b['cid'] == 4) $lnk .= 'plintus/';
-                                    if($b['cid'] == 5) $lnk .= 'laminat/';
-                                    ?>	
-                                        <tr>
-                                        <? if($b['cid'] == 3) : ?>
-											<td><img src="/<?=$item->img1; ?>" height="155" width="220" alt=""></td>
-											<td class="desc">
-												<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
-												<p><?=$item->wood->name.' '.$item->name.' '/*.$item->otbor->name*/.' '.$item->otdelka->name.' '.$item->size.'мм'  ?></p>
-											</td>
-                                        <? elseif($b['cid'] == 4) : ?>
-											<td><img src="/<?=$item->img; ?>" height="155" width="220" alt=""></td>
-											<td class="desc">
-												<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
-												<p><?=$item->wood->name.' '.$item->name.' '.$item->plintus_type->name.' '.$item->otdelka->name.' '.$item->plintus_height->name.'мм'  ?></p>
-											</td>
-                                        <? elseif($b['cid'] == 5) : ?>
-											<td><img src="/<?=$item->img1; ?>" height="155" width="220" alt=""></td>
-											<td class="desc">
-												<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
-												<p><?=$item->wood->name.' '.$item->name.' '.$item->laminat_type->name.' '.$item->load_class->name.' класс '.$item->size.'мм'  ?></p>
-											</td>
-	                                    <? else : ?>
-		                                    <td><img src="/<?=isset($item->img) ? $item->img : $item->img1; ?>" height="155" width="220" alt=""></td>
-											<td class="desc">
-												<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->name; ?></a>
-												<p><?=$item->name.' '.$item->size.'мм'  ?></p>
-											</td>
-                                        <? endif; ?>
-											<td>
-												<div class="kolvo-box">
-													<button type="button" class="minus <? if($b['num'] == 1) echo 'dis-minus'; ?>">-</button>
-													<span class="text-input">
-														<input type="text" value="<?=$b['num']; ?>" class="text" name="num[<?=$b['id'] ?>]" />
-                                                        
-													</span>
-													<button type="button" class="plus <? if($b['num'] > 998) echo 'dis-plus'; ?>">+</button>
-                                                    <input type="hidden" class="b_price" name="bprice" value="<?=round($b['price'],0) ?>" />
-												</div>
-											</td>
-											<td><strong><?=number_format(round($b['price'],0),0,',',' ') ?> р. м2</strong></td>
-											<td><strong><?=number_format(round($b['price'],0)*$b['num'],0,',',' ') ?> р.</strong></td>
-											<td><a href="/basket/delete_basket/<?=$b['cid']; ?>/<?=$item->id; ?>"><button type="button" class="del">x</button></a></td>
-										</tr>
+										<? if (false): ?>
+	                                    <? foreach($basket as $b) : ?>
+	                                    <?php $item = $b['data']; ?>
+										<?php
+	                                    $lnk = '/';
+	                                    if($b['cid'] == 3) $lnk .= 'parketnaya_doska/';
+	                                    if($b['cid'] == 4) $lnk .= 'plintus/';
+	                                    if($b['cid'] == 5) $lnk .= 'laminat/';
+	                                    ?>	
+	                                        <tr>
+	                                        <? if($b['cid'] == 3) : ?>
+												<td><img src="/<?=$item->img1; ?>" height="155" width="220" alt="" class="product_img"></td>
+												<td class="desc">
+													<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
+													<p><?=$item->wood->name.' '.$item->name.' '/*.$item->otbor->name*/.' '.$item->otdelka->name.' '.$item->size.'мм'  ?></p>
+												</td>
+	                                        <? elseif($b['cid'] == 4) : ?>
+												<td><img src="/<?=$item->img; ?>" height="155" width="220" alt="" class="product_img"></td>
+												<td class="desc">
+													<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
+													<p><?=$item->wood->name.' '.$item->name.' '.$item->plintus_type->name.' '.$item->otdelka->name.' '.$item->plintus_height->name.'мм'  ?></p>
+												</td>
+	                                        <? elseif($b['cid'] == 5) : ?>
+												<td><img src="/<?=$item->img1; ?>" height="155" width="220" alt="" class="product_img"></td>
+												<td class="desc">
+													<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->brand->name.' '.$item->wood->name.' '.$item->name; ?></a>
+													<p><?=$item->wood->name.' '.$item->name.' '.$item->laminat_type->name.' '.$item->load_class->name.' класс '.$item->size.'мм'  ?></p>
+												</td>
+		                                    <? else : ?>
+			                                    <td><img src="/<?=isset($item->img) ? $item->img : $item->img1; ?>" height="155" width="220" alt="" class="product_img"></td>
+												<td class="desc">
+													<a href="<?=$lnk.$item->brand->alias.'-'.$item->wood->alias.'-'.$item->id.'-id'; ?>" class="title"><?=$item->name; ?></a>
+													<p><?=$item->name.' '.$item->size.'мм'  ?></p>
+												</td>
+	                                        <? endif; ?>
+												<td>
+													<div class="kolvo-box">
+														<button type="button" class="minus <? if($b['num'] == 1) echo 'dis-minus'; ?>">-</button>
+														<span class="text-input">
+															<input type="text" value="<?=$b['num']; ?>" class="text" name="num[<?=$b['id'] ?>]" />
+	                                                        
+														</span>
+														<button type="button" class="plus <? if($b['num'] > 998) echo 'dis-plus'; ?>">+</button>
+	                                                    <input type="hidden" class="b_price" name="bprice" value="<?=round($b['price'],0) ?>" />
+													</div>
+												</td>
+												<td><strong><?=number_format(round($b['price'],0),0,',',' ') ?> р. м2</strong></td>
+												<td><strong><?=number_format(round($b['price'],0)*$b['num'],0,',',' ') ?> р.</strong></td>
+												<td><a href="/basket/delete_basket/<?=$b['cid']; ?>/<?=$item->id; ?>"><button type="button" class="del">x</button></a></td>
+											</tr>
 
-										<? endforeach; ?>
-										<? endif; ?>
-									</tbody>
-								</table>
+											<? endforeach; ?>
+											<? endif; ?>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 						<div class="itogo">

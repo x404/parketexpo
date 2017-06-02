@@ -82,7 +82,7 @@
 <? $this->load->view('templates/front/include/top_nav',$top_nav); ?>
 
 
-	<div class="main form-adapt">
+	<div class="main">
 		<div class="content-wrapper">
 			<section class="content">
                 <?=$breadcrumbs; ?>

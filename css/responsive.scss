@@ -197,8 +197,20 @@ footer{
 
 
 
-@media (max-width: 1700px){
+@media (max-width: 1470px){
+	.basket{
+		.itogo{
+			display: flex;
+			justify-content: space-between;
+		}
+		.pereschet{
+			margin-left: 0;
+		}
 
+		.price-itogo{
+			width: 380px;
+		}
+	}	
 }
 
 
@@ -243,6 +255,25 @@ footer{
 		}
 	}
 
+
+	.basket{
+		.price-itogo{
+			width: 360px;
+		}
+
+		.itogo{
+			padding-right: 20px;
+		}
+
+		.pereschet
+		{
+			font-size: 18px;
+		}
+
+		.price-itogo{
+			font-size: 22px;
+		}
+	}
 }
 
 
@@ -332,6 +363,17 @@ footer{
 		min-width: 0;
 		text-align: center;
 	}
+
+	.basket{
+		.itogo{
+			padding-left: 30px;
+		}
+		.price-itogo{
+			text-align: left;
+			width: auto;
+		}
+	}
+
 }
 
 
@@ -423,6 +465,18 @@ footer{
 			width: 90%;
 		}
 	}
+
+	.basket{
+		.cont-form{
+			.row{
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			label{
+				font-size: 16px;				
+			}
+		}
+	}
 }
 
 
@@ -491,7 +545,18 @@ footer{
 		}
 	}
 
-
+	.basket_page{
+		.table{
+			img{
+				width: 100px !important;
+				height: auto;
+			}
+		}
+		.backet tbody td:first-child{
+			padding-left: 10px;
+			width: auto;
+		}
+	}
 }
 
 
@@ -575,7 +640,6 @@ footer{
 		}
 	}
 
-
 	// card
 	.under_card_row{
 		.left-prises{
@@ -607,6 +671,19 @@ footer{
 			margin-top: 0;
 		}
 	}
+
+	.basket_page{
+		.price-itogo{
+			font-size: 18px;
+		}
+		.pereschet{
+			font-size: 16px;
+		}
+		.backet tr td:first-child{
+			display: none;
+		}
+	}
+
 }
 
 
@@ -787,6 +864,32 @@ footer{
 
 	.content-slider .slider-info-box{
 		left: 4px;
+	}
+
+	.basket_page{
+		.itogo{
+			flex-wrap: wrap;
+		}
+		.price-itogo{
+			padding-bottom: 10px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.cont-form{
+			.label-wrap{
+				width: 100%;
+			}
+			.row{
+				padding-top: 12px;
+				padding-bottom: 15px;
+			}
+		}
+
+		.backet-form .smotr{
+			float: left;
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -1224,11 +1327,6 @@ footer{
 		margin-top: 0;
 	}
 
-	.sub-nav-strelkoi a:hover span, 
-	.sub-nav-strelkoi .active a span{
-
-	}
-
 	.sub-nav-strelkoi span{
 		width: calc(100% - 27px)
 	}
@@ -1238,6 +1336,38 @@ footer{
 		.left-block{
 			margin-right: 0;
 		}
+	}
+
+	.remember_page{
+		.green-button-40,
+		.blue-button-40{
+			display: block;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.rem-list .item-zakaz{
+			width: 100%;
+		}
+
+		form .price-title{
+			padding: 8px 0 8px 0 !important;
+			text-align: center;
+		}
+
+		.spi-form .text-input{
+			display: block;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+	}
+
+	
+	.basket_page .backet tr td:first-child{
+		display: table-cell;
 	}
 }
 
@@ -1605,34 +1735,6 @@ footer{
 		margin-right: -20px;
 		padding-left: 0;
 		width: 110%;
-	}
-
-
-
-	.remember_page{
-		.green-button-40,
-		.blue-button-40{
-			display: block;
-			float: none;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.rem-list .item-zakaz{
-			width: 100%;
-		}
-
-		form .price-title{
-			padding: 8px 0 8px 0 !important;
-			text-align: center;
-		}
-
-		.spi-form .text-input{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 10px;
-		}
 	}
 }
 
