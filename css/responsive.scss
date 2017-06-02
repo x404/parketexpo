@@ -249,6 +249,17 @@ footer{
 			max-width: $w;
 		}
 	}
+
+	.conf-panel{
+		display: flex;
+		justify-content: space-between;
+		.conf-pages{
+			margin-left: auto;
+		}
+		.conf-buttons{
+			width: auto;
+		}
+	}
 }
 
 
@@ -432,6 +443,13 @@ footer{
 	}
 
 
+	.conf-buttons{
+		.spiskom{
+			// display: none;
+		}
+	}
+
+
 	.cont-form .submit-wrap{
 		display: flex;
 		flex-direction: column;
@@ -470,6 +488,36 @@ footer{
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+		}
+	}
+
+	// catalog
+	.conf-panel{
+		align-items: center;
+		background: none;
+		flex-direction: column;
+		height: auto;
+		justify-content: center;
+		margin-top: -30px;
+		padding-bottom: 10px;
+		.conf-buttons,
+		.conf-pages{
+			float: none;
+			margin-left: 0;
+		}
+		.conf-pages{
+			margin-top: 10px;
+		}
+
+		.conf-buttons{
+			background: #e7e6e1;
+			border-radius: 9px;
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 15px;
 		}
 	}
 }
@@ -536,6 +584,7 @@ footer{
 
 
 @media (max-width: 1045px){
+	// header
 	header{
 		.head{
 			&-phones{
@@ -549,6 +598,7 @@ footer{
 			}
 		}
 	}
+
 
 
 	.cont-form{
@@ -1068,7 +1118,6 @@ footer{
 			margin-right: auto;	
 			padding-top: 4px;
 		}
-		// padding-bottom: 10px;
 	}
 
 	.filter-buttons-bot{
@@ -1097,6 +1146,11 @@ footer{
 	.guide-list .right-block{
 		float: none;
 		text-align: center;
+	}
+
+
+	.conf-panel{
+		margin-top: 0;
 	}
 }
 
@@ -1284,15 +1338,18 @@ footer{
 
 	// catalog
 	.conf-panel{
-		background: #ebeae5;
-		height: auto;
+		// background: #ebeae5;
+		// height: auto;
 		.conf-title,
 		.conf-button
 		{
 			display: block;
 			float: none;
-			margin-bottom: 10px;
+			// margin-bottom: 10px;
 			margin-left: 0;
+		}
+		.conf-title{
+			display: none;
 		}
 	}
 
@@ -1489,6 +1546,10 @@ footer{
 
 
 @media (max-width: 370px){
+	header .head-info{
+		padding-left: 0;
+	}
+	
 	// card
 	.card2{
 		.carouselo{

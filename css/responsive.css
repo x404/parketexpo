@@ -215,6 +215,20 @@ footer .footer-soc {
   .mebelslid .caroufredsel_wrapper {
     max-width: 650px;
   }
+  .conf-panel {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .conf-panel .conf-pages {
+    margin-left: auto;
+  }
+  .conf-panel .conf-buttons {
+    width: auto;
+  }
 }
 
 @media (max-width: 1290px) {
@@ -405,6 +419,43 @@ footer .footer-soc {
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 500px;
+  }
+  .conf-panel {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -30px;
+    padding-bottom: 10px;
+  }
+  .conf-panel .conf-buttons,
+  .conf-panel .conf-pages {
+    float: none;
+    margin-left: 0;
+  }
+  .conf-panel .conf-pages {
+    margin-top: 10px;
+  }
+  .conf-panel .conf-buttons {
+    background: #e7e6e1;
+    border-radius: 9px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
   }
 }
 
@@ -888,6 +939,9 @@ footer .footer-soc {
     float: none;
     text-align: center;
   }
+  .conf-panel {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1038,16 +1092,14 @@ footer .footer-soc {
     margin-right: 0;
     text-align: center;
   }
-  .conf-panel {
-    background: #ebeae5;
-    height: auto;
-  }
   .conf-panel .conf-title,
   .conf-panel .conf-button {
     display: block;
     float: none;
-    margin-bottom: 10px;
     margin-left: 0;
+  }
+  .conf-panel .conf-title {
+    display: none;
   }
   .card2 .carouselo div.slide {
     width: 350px !important;
@@ -1195,6 +1247,9 @@ footer .footer-soc {
 }
 
 @media (max-width: 370px) {
+  header .head-info {
+    padding-left: 0;
+  }
   .card2 .carouselo div.slide {
     width: 300px !important;
   }
