@@ -27,9 +27,12 @@
 	<title>Запомненное</title>
     <meta name='description' content='Запомненное' />
 	<meta name='keywords' content='Запомненное' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />   
 	<link rel="stylesheet" href="/css/all.css">
 	<link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/css/tip-violet/tip-violet.css">
+	<link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
@@ -51,7 +54,7 @@
 <? $this->load->view('templates/front/include/header', $header); ?>
 <? $this->load->view('templates/front/include/top_nav', $top_nav); ?>
 
-	<div class="main">
+	<div class="main remember_page">
 		<div class="content-wrapper">
 			<section class="content">
 				<ul class="breadcrumbs">

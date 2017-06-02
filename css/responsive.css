@@ -521,6 +521,9 @@ footer .footer-soc {
     max-width: 450px;
     height: 350px !important;
   }
+  .remember_page .conf-panel {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -964,7 +967,7 @@ footer .footer-soc {
     font-size: 22px;
   }
   .boxed-content {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .guide-list .right-block {
     float: none;
@@ -1263,6 +1266,26 @@ footer .footer-soc {
     margin-right: -20px;
     padding-left: 0;
     width: 110%;
+  }
+  .remember_page .green-button-40,
+  .remember_page .blue-button-40 {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .remember_page .rem-list .item-zakaz {
+    width: 100%;
+  }
+  .remember_page form .price-title {
+    padding: 8px 0 8px 0 !important;
+    text-align: center;
+  }
+  .remember_page .spi-form .text-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 
