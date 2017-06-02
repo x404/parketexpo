@@ -61,7 +61,8 @@
                 items : {
                     visible     : 1,
                     width       : 763,
-                    height      : 582
+                    height      : 582,
+                    responsive : true
 
                 },
                 onCreate : function() {

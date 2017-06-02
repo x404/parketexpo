@@ -184,6 +184,13 @@ footer{
 		min-width: 1260px;
 		max-width: 1600px;
 	}
+
+
+	.mebelslid{
+		.caroufredsel_wrapper{
+			height: 582px !important;
+		}
+	}
 }
 
 
@@ -198,11 +205,12 @@ footer{
 @media (max-width: 1400px){
 	.boxed-content{
 		img{
+			display: block;
+			float: none !important;
+			height: auto !important;
 			margin-left: auto !important;
 			margin-right: auto !important;
 			max-width: 100%;
-			height: auto !important;
-			float: none !important;
 		}
 	}
 
@@ -215,11 +223,26 @@ footer{
 		$w : 700px;
 		div.slide img{
 			width: $w;
+			display: inline !important;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 545px !important;
 		}
 	}
+	.slider-conf{
+		float: left !important;
+		img{
+		}
+
+		li img{
+			height: 60px !important;
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+			display: inline !important;
+		}
+	}
+
 }
 
 
@@ -244,10 +267,13 @@ footer{
 		$w : 650px;
 		div.slide img{
 			width: $w;
+			display: inline;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 505px !important;
 		}
+
 	}
 
 	.conf-panel{
@@ -298,7 +324,6 @@ footer{
 		min-width: 0;
 	}
 }
-
 
 
 @media (max-width: 1260px){
@@ -442,14 +467,6 @@ footer{
 		width: calc(100% - 26px);
 	}
 
-
-	.conf-buttons{
-		.spiskom{
-			// display: none;
-		}
-	}
-
-
 	.cont-form .submit-wrap{
 		display: flex;
 		flex-direction: column;
@@ -470,6 +487,7 @@ footer{
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 451px !important;
 		}
 	}
 }
@@ -488,6 +506,7 @@ footer{
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 390px !important;
 		}
 	}
 
@@ -512,12 +531,12 @@ footer{
 		.conf-buttons{
 			background: #e7e6e1;
 			border-radius: 9px;
-			width: 100%;
-			padding: 10px;
-			text-align: center;
 			display: flex;
 			justify-content: center;
 			margin-top: 15px;
+			padding: 10px;
+			text-align: center;
+			width: 100%;
 		}
 	}
 }
@@ -564,13 +583,13 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -220px;
 		$w : 450px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 350px !important;
 		}
 	}
 }
@@ -617,6 +636,20 @@ footer{
 		padding-left: 150px;
 	}
 
+
+
+	// guide
+	.guide-list{
+		.left-block,
+		.right-block{
+			float: none;
+		}
+		.left-block{
+			.guide-picture{
+				display: inline-block;
+			}
+		}
+	}
 }
 
 
@@ -649,12 +682,12 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -270px;
 		$w : 400px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
+			height: 314px !important;
 			max-width: $w;
 		}
 	}
@@ -713,13 +746,13 @@ footer{
 
 
 	.mebelslid{
-		margin-bottom: -290px;
 		$w : 350px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 274px !important;
 		}
 	}
 }
@@ -764,12 +797,12 @@ footer{
 
 
 	.mebelslid{
-		margin-bottom: -340px;
 		$w : 310px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
+			height: 243px !important;
 			max-width: $w;
 		}
 	}
@@ -798,12 +831,12 @@ footer{
 
 
 	.mebelslid{
-		margin-bottom: -340px;
 		$w : 280px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
+			height: 220px !important;
 			max-width: $w;
 		}
 	}
@@ -833,12 +866,12 @@ footer{
 
 
 	.mebelslid{
-		margin-bottom: -250px;
 		$w : 400px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
+			height: 313px !important;
 			max-width: $w;
 		}
 	}
@@ -965,13 +998,13 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -290px;
 		$w : 350px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 274px !important;
 		}
 	}
 }
@@ -988,13 +1021,13 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -320px;
 		$w : 310px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 244px !important;
 		}
 	}
 }
@@ -1151,6 +1184,15 @@ footer{
 
 	.conf-panel{
 		margin-top: 0;
+	}
+
+	.sub-nav-strelkoi a:hover span, 
+	.sub-nav-strelkoi .active a span{
+
+	}
+
+	.sub-nav-strelkoi span{
+		width: calc(100% - 27px)
 	}
 }
 
@@ -1391,13 +1433,13 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -330px;
 		$w : 300px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 235px !important;
 		}
 	}
 }
@@ -1502,13 +1544,26 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -380px;
 		$w : 250px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 196px !important;
+		}
+
+	}
+	.slider-conf-full{
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 0;
+		width: 110%;
+		li:first-child{
+			margin-left: 0 !important;
+		}
+		li:last-child{
+			margin-right: 0 !important;
 		}
 	}
 }
@@ -1541,6 +1596,12 @@ footer{
 	.card2 .carouselo div.thumbnails{
 		margin-top: -60px;
 	}
+
+	.slider-conf-full{
+		#pager2 {
+			display: flex !important;
+		}
+	}
 }
 
 
@@ -1549,7 +1610,7 @@ footer{
 	header .head-info{
 		padding-left: 0;
 	}
-	
+
 	// card
 	.card2{
 		.carouselo{
@@ -1670,13 +1731,13 @@ footer{
 	}
 
 	.mebelslid{
-		margin-bottom: -410px;
 		$w : 220px;
 		div.slide img{
 			width: $w;
 		}
 		.caroufredsel_wrapper{
 			max-width: $w;
+			height: 172px !important;
 		}
 
 		.slider-info-box strong{
@@ -1706,8 +1767,6 @@ footer{
 			}
 		}
 	}
-
-
 }
 
 
@@ -1776,6 +1835,11 @@ footer{
 	.boxed .boxed-title h1{
 		line-height: 1.2;
 		font-size: 22px;
+	}
+
+
+	.mebelslid{
+		margin-left: -15px;
 	}
 }
 

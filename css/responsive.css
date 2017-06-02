@@ -173,15 +173,19 @@ footer .footer-soc {
     min-width: 1260px;
     max-width: 1600px;
   }
+  .mebelslid .caroufredsel_wrapper {
+    height: 582px !important;
+  }
 }
 
 @media (max-width: 1400px) {
   .boxed-content img {
+    display: block;
+    float: none !important;
+    height: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
     max-width: 100%;
-    height: auto !important;
-    float: none !important;
   }
   .cont-form .form-text {
     padding-left: 0;
@@ -189,9 +193,20 @@ footer .footer-soc {
   }
   .mebelslid div.slide img {
     width: 700px;
+    display: inline !important;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 700px;
+    height: 545px !important;
+  }
+  .slider-conf {
+    float: left !important;
+  }
+  .slider-conf li img {
+    height: 60px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: inline !important;
   }
 }
 
@@ -211,9 +226,11 @@ footer .footer-soc {
   }
   .mebelslid div.slide img {
     width: 650px;
+    display: inline;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 650px;
+    height: 505px !important;
   }
   .conf-panel {
     display: -webkit-flex;
@@ -406,6 +423,7 @@ footer .footer-soc {
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 580px;
+    height: 451px !important;
   }
 }
 
@@ -419,6 +437,7 @@ footer .footer-soc {
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 500px;
+    height: 390px !important;
   }
   .conf-panel {
     -webkit-align-items: center;
@@ -446,9 +465,6 @@ footer .footer-soc {
   .conf-panel .conf-buttons {
     background: #e7e6e1;
     border-radius: 9px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -456,6 +472,9 @@ footer .footer-soc {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -490,14 +509,12 @@ footer .footer-soc {
   .boxed-three .spi-form {
     padding-left: 0;
   }
-  .mebelslid {
-    margin-bottom: -220px;
-  }
   .mebelslid div.slide img {
     width: 450px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 450px;
+    height: 350px !important;
   }
 }
 
@@ -529,6 +546,13 @@ footer .footer-soc {
   .cont-form .submit-wrap {
     padding-left: 150px;
   }
+  .guide-list .left-block,
+  .guide-list .right-block {
+    float: none;
+  }
+  .guide-list .left-block .guide-picture {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -555,13 +579,11 @@ footer .footer-soc {
     margin-left: 0;
     padding-left: 0;
   }
-  .mebelslid {
-    margin-bottom: -270px;
-  }
   .mebelslid div.slide img {
     width: 400px;
   }
   .mebelslid .caroufredsel_wrapper {
+    height: 314px !important;
     max-width: 400px;
   }
 }
@@ -607,14 +629,12 @@ footer .footer-soc {
   .form-type .text-wrap {
     margin-left: 0;
   }
-  .mebelslid {
-    margin-bottom: -290px;
-  }
   .mebelslid div.slide img {
     width: 350px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 350px;
+    height: 274px !important;
   }
 }
 
@@ -649,13 +669,11 @@ footer .footer-soc {
   .footer-nav li:last-child {
     margin-right: 17px;
   }
-  .mebelslid {
-    margin-bottom: -340px;
-  }
   .mebelslid div.slide img {
     width: 310px;
   }
   .mebelslid .caroufredsel_wrapper {
+    height: 243px !important;
     max-width: 310px;
   }
 }
@@ -673,13 +691,11 @@ footer .footer-soc {
   aside.right-sidebar {
     display: none;
   }
-  .mebelslid {
-    margin-bottom: -340px;
-  }
   .mebelslid div.slide img {
     width: 280px;
   }
   .mebelslid .caroufredsel_wrapper {
+    height: 220px !important;
     max-width: 280px;
   }
 }
@@ -696,13 +712,11 @@ footer .footer-soc {
   .footer-bottom .welkome {
     display: none;
   }
-  .mebelslid {
-    margin-bottom: -250px;
-  }
   .mebelslid div.slide img {
     width: 400px;
   }
   .mebelslid .caroufredsel_wrapper {
+    height: 313px !important;
     max-width: 400px;
   }
 }
@@ -797,14 +811,12 @@ footer .footer-soc {
   .card_page .boxed .toveli li:nth-child(3) {
     display: none;
   }
-  .mebelslid {
-    margin-bottom: -290px;
-  }
   .mebelslid div.slide img {
     width: 350px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 350px;
+    height: 274px !important;
   }
 }
 
@@ -818,14 +830,12 @@ footer .footer-soc {
     max-width: 370px;
     height: auto;
   }
-  .mebelslid {
-    margin-bottom: -320px;
-  }
   .mebelslid div.slide img {
     width: 310px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 310px;
+    height: 244px !important;
   }
 }
 
@@ -941,6 +951,9 @@ footer .footer-soc {
   }
   .conf-panel {
     margin-top: 0;
+  }
+  .sub-nav-strelkoi span {
+    width: calc(100% - 27px);
   }
 }
 
@@ -1126,14 +1139,12 @@ footer .footer-soc {
   .cat-spisok .carouselo-c div.thumbnails img {
     width: 32%;
   }
-  .mebelslid {
-    margin-bottom: -330px;
-  }
   .mebelslid div.slide img {
     width: 300px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 300px;
+    height: 235px !important;
   }
 }
 
@@ -1212,14 +1223,24 @@ footer .footer-soc {
     margin-top: 30px;
     width: 250px;
   }
-  .mebelslid {
-    margin-bottom: -380px;
-  }
   .mebelslid div.slide img {
     width: 250px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 250px;
+    height: 196px !important;
+  }
+  .slider-conf-full {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 0;
+    width: 110%;
+  }
+  .slider-conf-full li:first-child {
+    margin-left: 0 !important;
+  }
+  .slider-conf-full li:last-child {
+    margin-right: 0 !important;
   }
 }
 
@@ -1243,6 +1264,11 @@ footer .footer-soc {
   }
   .card2 .carouselo div.thumbnails {
     margin-top: -60px;
+  }
+  .slider-conf-full #pager2 {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
@@ -1336,14 +1362,12 @@ footer .footer-soc {
     padding-top: 3px;
     font-weight: bold;
   }
-  .mebelslid {
-    margin-bottom: -410px;
-  }
   .mebelslid div.slide img {
     width: 220px;
   }
   .mebelslid .caroufredsel_wrapper {
     max-width: 220px;
+    height: 172px !important;
   }
   .mebelslid .slider-info-box strong {
     font-size: 20px;
@@ -1416,5 +1440,8 @@ footer .footer-soc {
   .boxed .boxed-title h1 {
     line-height: 1.2;
     font-size: 22px;
+  }
+  .mebelslid {
+    margin-left: -15px;
   }
 }
