@@ -476,6 +476,11 @@ footer .footer-soc {
     text-align: center;
     width: 100%;
   }
+  .content-slider .slider-info-box strong {
+    font-size: 19px;
+    height: auto;
+    padding-bottom: 12px;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -586,6 +591,9 @@ footer .footer-soc {
     height: 314px !important;
     max-width: 400px;
   }
+  .content-slider .slider-info-box strong {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -635,6 +643,12 @@ footer .footer-soc {
   .mebelslid .caroufredsel_wrapper {
     max-width: 350px;
     height: 274px !important;
+  }
+  .content-slider .slider-info-box strong {
+    font-size: 13px;
+  }
+  .content-slider .slider-info-box {
+    left: 4px;
   }
 }
 
@@ -692,11 +706,13 @@ footer .footer-soc {
     display: none;
   }
   .mebelslid div.slide img {
-    width: 280px;
+    width: 320px;
   }
   .mebelslid .caroufredsel_wrapper {
-    height: 220px !important;
-    max-width: 280px;
+    height: 251px !important;
+    max-width: 320px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -1140,11 +1156,11 @@ footer .footer-soc {
     width: 32%;
   }
   .mebelslid div.slide img {
-    width: 300px;
+    width: 320px;
   }
   .mebelslid .caroufredsel_wrapper {
-    max-width: 300px;
-    height: 235px !important;
+    max-width: 320px;
+    height: 250px !important;
   }
 }
 
@@ -1224,23 +1240,18 @@ footer .footer-soc {
     width: 250px;
   }
   .mebelslid div.slide img {
-    width: 250px;
+    width: 310px;
   }
   .mebelslid .caroufredsel_wrapper {
-    max-width: 250px;
-    height: 196px !important;
+    max-width: 310px;
+    height: 245px !important;
+    margin-left: -10px !important;
   }
   .slider-conf-full {
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 0;
     width: 110%;
-  }
-  .slider-conf-full li:first-child {
-    margin-left: 0 !important;
-  }
-  .slider-conf-full li:last-child {
-    margin-right: 0 !important;
   }
 }
 
@@ -1265,10 +1276,16 @@ footer .footer-soc {
   .card2 .carouselo div.thumbnails {
     margin-top: -60px;
   }
-  .slider-conf-full #pager2 {
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+  .mebelslid div.slide img {
+    width: 290px;
+  }
+  .mebelslid .caroufredsel_wrapper {
+    max-width: 290px;
+    height: 227px !important;
+  }
+  .content-slider .slider-info-box strong {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -1315,6 +1332,12 @@ footer .footer-soc {
   }
   .form-type textarea, .form-type .text {
     width: calc(100% - 30px);
+  }
+  .mebelslid .caroufredsel_wrapper {
+    left: -20px !important;
+  }
+  .slider-conf-full {
+    width: 120%;
   }
 }
 
@@ -1363,14 +1386,15 @@ footer .footer-soc {
     font-weight: bold;
   }
   .mebelslid div.slide img {
-    width: 220px;
+    width: 280px;
   }
   .mebelslid .caroufredsel_wrapper {
-    max-width: 220px;
-    height: 172px !important;
+    max-width: 280px;
+    height: 220px !important;
   }
-  .mebelslid .slider-info-box strong {
-    font-size: 20px;
+  #pager2 li {
+    margin-left: 4px;
+    margin-right: 4px;
   }
 }
 
@@ -1386,6 +1410,35 @@ footer .footer-soc {
   }
   .card2 .carouselo div.slide .im {
     max-width: 240px;
+  }
+  .mebelslid div.slide img {
+    width: 270px;
+  }
+  .mebelslid .caroufredsel_wrapper {
+    max-width: 270px;
+    height: 210px !important;
+  }
+  .content-slider .slider-info-box {
+    width: 200px;
+    left: 15px;
+  }
+  .content-slider .slider-info-box strong {
+    background: #8d8073;
+  }
+  #pager2 li {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 330px) {
+  .slider-conf-full .pager {
+    text-align: center;
+    margin-left: -10px;
+  }
+  #pager2 li {
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
 
