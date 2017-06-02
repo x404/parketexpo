@@ -658,6 +658,12 @@ footer{
 				display: inline-block;
 			}
 		}
+
+		h2{
+			text-align: center;
+			font-size: 22px;
+			padding-bottom: 15px;
+		}
 	}
 }
 
@@ -1219,6 +1225,13 @@ footer{
 
 	.sub-nav-strelkoi span{
 		width: calc(100% - 27px)
+	}
+
+	.guide-list{
+		margin-right: 0;
+		.left-block{
+			margin-right: 0;
+		}
 	}
 }
 

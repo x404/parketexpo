@@ -558,6 +558,11 @@ footer .footer-soc {
   .guide-list .left-block .guide-picture {
     display: inline-block;
   }
+  .guide-list h2 {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -970,6 +975,12 @@ footer .footer-soc {
   }
   .sub-nav-strelkoi span {
     width: calc(100% - 27px);
+  }
+  .guide-list {
+    margin-right: 0;
+  }
+  .guide-list .left-block {
+    margin-right: 0;
   }
 }
 
