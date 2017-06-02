@@ -1687,7 +1687,6 @@ footer{
 			.form-help{
 				display: block;
 				float: none;
-				/* text-align: center; */
 			}
 		}
 	}
@@ -1703,6 +1702,12 @@ footer{
 
 	.slider-conf-full{
 		width: 120%;
+	}
+
+
+	// sales
+	.carouselo-c  div.thumbnails img{
+		float: none;
 	}
 }
 

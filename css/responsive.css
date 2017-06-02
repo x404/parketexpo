@@ -1328,7 +1328,6 @@ footer .footer-soc {
   .cont-form .submit-wrap .form-help {
     display: block;
     float: none;
-    /* text-align: center; */
   }
   .form-type textarea, .form-type .text {
     width: calc(100% - 30px);
@@ -1338,6 +1337,9 @@ footer .footer-soc {
   }
   .slider-conf-full {
     width: 120%;
+  }
+  .carouselo-c div.thumbnails img {
+    float: none;
   }
 }
 
