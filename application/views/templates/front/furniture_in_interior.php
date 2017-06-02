@@ -5,7 +5,10 @@
 	<title><?= $category->title ?></title>
     <meta name='description' content='<?= $category->meta_d ?>' />
 	<meta name='keywords' content='<?= $category->meta_k ?>' />        
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />	  
 	<link rel="stylesheet" href="/css/all.css">
+	<link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
@@ -14,9 +17,6 @@
 	<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
-			if ($.browser.msie && $.browser.version == 10) {
-	  			$("html").addClass("ie10");
-			}
 
 	  		$(".head-trash .trash-title").mouseover(function(e){
 				$(this).closest(".head-right").toggleClass("head-right-zoomed");
@@ -98,6 +98,10 @@
             });
 		});
 	</script> 
+
+	<!--[if !IE]><!-->
+	<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
+	<!--<![endif]-->
 </head>
 
 <? $this->load->view('templates/front/include/header', $header); ?>
