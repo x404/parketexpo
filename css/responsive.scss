@@ -202,6 +202,28 @@ footer{
 
 
 
+@media (max-width: 1675px){
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.form-type .text[name="phone"]{
+			width: calc(100% - 281px) !important
+		}
+	}
+}
+
+
+@media (max-width: 1550px){
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.form-type .text[name="phone"]{
+			width: calc(100% - 278px) !important
+		}
+	}	
+}
+
+
 @media (max-width: 1470px){
 	.basket_page{
 		.itogo{
@@ -217,6 +239,14 @@ footer{
 		}
 		.backet-form .price-itogo{
 			// width: auto;
+		}
+	}	
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.form-type .text[name="phone"]{
+			width: calc(100% - 270px) !important
 		}
 	}	
 
@@ -283,6 +313,14 @@ footer{
 			font-size: 22px;
 		}
 	}
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.form-type .text[name="phone"]{
+			width: calc(100% - 267px) !important
+		}
+	}	
 }
 
 
@@ -499,6 +537,23 @@ footer{
 			}
 		}
 	}
+
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+
+		.label-code{
+			margin-right: 130px !important;
+		}
+		.form-type .text[name="code"]{
+			width: 70px !important;
+		}
+
+		.form-type .text[name="phone"]{
+			width: calc(100% - 205px) !important
+		}
+	}	
 }
 
 
@@ -644,6 +699,48 @@ footer{
 	.boxed .toveli li:nth-child(4){
 		display: none;
 	}
+
+
+	.form-adapt-watch_price,
+	.form-adapt-low_price,
+	.form-adapt-error,
+	.form-adapt-claims,
+	.form-adapt-order,
+	.form-adapt-order_call
+	{
+		.form-type{
+			input,
+			textarea{
+				font-size: 16px;
+			}
+		}		
+	}
+
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.cont-form .label-wrap{
+			width: 130px;
+		}
+
+		.label-code{
+			margin-right: 105px !important;
+		}
+
+		.form-type .text-wrap{
+			margin-left: 130px;
+		}
+
+		.form-type .text[name="code"]{
+			margin-right: 22px !important;
+		}
+
+		.form-type .text[name="phone"]{
+			width: calc(100% - 174px) !important
+		}
+	}	
+
 }
 
 
@@ -715,9 +812,6 @@ footer{
 			margin-right: 0;
 		}
 	}
-
-	
-
 
 }
 
@@ -828,6 +922,15 @@ footer{
 	.content-slider .slider-info-box strong{
 		font-size: 16px;
 	}
+
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+		.form-type .text[name="phone"]{
+			width: calc(100% - 160px) !important
+		}
+	}
 }
 
 
@@ -855,8 +958,6 @@ footer{
 	.boxed .toveli li:nth-child(3){
 		display: none;
 	}
-
-
 
 	.error-form .form-text{
 		padding-bottom: 0;
@@ -946,6 +1047,96 @@ footer{
 			font-size: 18px;
 		}
 	}
+
+
+
+	.form-adapt-watch_price,
+	.form-adapt-low_price,
+	.form-adapt-error,
+	.form-adapt-claims,
+	.form-adapt-order,
+	.form-adapt-order_call
+	{
+
+		.boxed .boxed-title h1{
+			font-size: 28px;
+		}
+		.cont-form{
+			.label-wrap{
+				width: 100%;
+			}
+			label{
+				line-height: 1.4;
+			}
+
+			.requed-row label{
+				background-position: 100% 3px
+			}
+		}
+		.submit-wrap{
+			.green-button-40{
+				margin: 10px auto 0 auto;
+			}
+		}		
+	}
+
+
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+
+		.text-input{
+			display: block;
+		}
+
+		.form-type{
+			textarea, .text{
+				width: calc(100% - 32px)
+			}
+
+			.text-wrap{
+				position: relative;
+				br{
+					display: none;
+				}
+			}
+			.text[name="code"],
+			.text[name="phone"]
+			{
+				margin-top: 3px;
+				display: block;
+				float: none;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+			.text[name="code"]{
+				margin-bottom: 10px;
+			}
+
+			.text[name="phone"]{
+				margin-top: 30px;
+				width: calc(100% - 32px) !important;
+			}
+
+			.label-code{
+				display: block;
+				margin-right: 0;
+				margin-left: 0 !important;
+				text-align: center;
+				width: 100%;
+			}
+
+			.label-phone{
+				left: 0;
+				margin-right: 0;
+				position: absolute;
+				text-align: center;
+				top: 66px;
+				width: 100%;
+			}
+		}
+	}
 }
 
 
@@ -1033,6 +1224,58 @@ footer{
 			margin-right: auto !important;
 		}
 	}
+
+
+	.form-adapt-order_call,
+	.form-adapt-order
+	{
+
+		.cont-form label{
+			float: none;
+			margin-bottom: 5px;
+		}
+
+		.form-type{
+			.text-wrap{
+				margin-left: 0;
+			}
+
+			.text-wrap br{
+				display: block;
+			}
+
+			.text-input{
+				display: inline;
+			}
+
+			.text[name="code"],
+			.text[name="phone"]{
+				display: inline;
+				vertical-align: top;
+			}
+
+			.text[name="code"]{
+				margin-right: 21px !important;
+			}
+
+			.text[name="phone"]{
+				margin-top: 3px;
+				width: calc(100% - 160px) !important;
+			}
+
+			.label-code{
+				width: auto;
+				display: inline;
+			}
+			.label-phone{
+				position: static;
+				text-align: left;
+			}
+		}
+		.text-input{
+		}
+	}
+
 }
 
 
@@ -1647,14 +1890,11 @@ footer{
 
 	// catalog
 	.conf-panel{
-		// background: #ebeae5;
-		// height: auto;
 		.conf-title,
 		.conf-button
 		{
 			display: block;
 			float: none;
-			// margin-bottom: 10px;
 			margin-left: 0;
 		}
 		.conf-title{
@@ -1984,6 +2224,56 @@ footer{
 			font-size: 15px;
 			line-height: 1.2;
 			text-align: justify;
+		}
+
+	}
+
+
+	.form-adapt-watch_price,
+	.form-adapt-low_price,
+	.form-adapt-error,
+	.form-adapt-claims
+	{
+		.boxed{
+			padding-bottom: 20px;
+			.boxed-title h1{
+				font-size: 22px;
+				line-height: 1.2;
+			}
+		}
+		.cont-form {
+			.row{
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+			label{
+				font-size: 15px;
+			}
+		}
+		.form-type{
+			.text,
+			textarea{
+				font-size: 14px;
+				line-height: 1.4;
+			}
+		}
+	}
+
+	.form-adapt-order_call,
+	.form-adapt-order{
+		.form-type{
+			.text[name="code"]{
+				font-size: 14px;
+				padding-left: 5px;
+				padding-right: 5px;
+				width: 38px !important;
+			}
+			.text[name="phone"]{
+				width: calc(100% - 105px) !important;
+			}
+		}
+		.label-code{
+			margin-right: 55px !important;
 		}
 	}
 }

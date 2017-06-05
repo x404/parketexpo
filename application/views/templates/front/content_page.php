@@ -81,8 +81,26 @@
 <? $this->load->view('templates/front/include/header',$header); ?>
 <? $this->load->view('templates/front/include/top_nav',$top_nav); ?>
 
+<? 
+$url_for_form = $_SERVER['REQUEST_URI']; 
+	//echo $url_for_form;
+$url_for_form_arr = explode('/', $url_for_form);
+	//echo '<pre>'; print_r($url_for_form_arr); echo '</pre>';
+array_shift($url_for_form_arr);
+	//echo '<pre>'; print_r($url_for_form_arr); echo '</pre>';
 
-	<div class="main form-adapt">
+	 $class_for_form = '';
+if($url_for_form_arr[0] == 'order') $class_for_form = 'form-adapt-order';
+if($url_for_form_arr[0] == 'error_report') $class_for_form = 'form-adapt-error';
+if($url_for_form_arr[0] == 'order_call') $class_for_form = 'form-adapt-order_call';
+if($url_for_form_arr[0] == 'low_price') $class_for_form = 'form-adapt-low_price';
+if($url_for_form_arr[0] == 'claims') $class_for_form = 'form-adapt-claims';
+//if($url_for_form_arr[0] == 'watch_price') $class_for_form = 'form-adapt-watch_price';
+$watch_price_entries = substr_count($url_for_form_arr[0],'watch_price');
+	//echo $watch_price_entries;
+if($watch_price_entries > 0) $class_for_form = 'form-adapt-watch_price';
+?>
+	<div class="main <? echo $class_for_form; ?>">
 		<div class="content-wrapper">
 			<section class="content">
                 <?=$breadcrumbs; ?>
