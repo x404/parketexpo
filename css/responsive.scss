@@ -1,5 +1,7 @@
-.tovar-sect{
-	// display: none;
+.left-sidebar{
+	.login-form{
+		display: none;
+	}
 }
 
 .flexbox{
@@ -877,6 +879,25 @@ footer{
 			padding-bottom: 15px;
 		}
 	}
+
+
+	// furniture_page
+	.furniture_page{
+		.guide-list{
+			.left-block{
+				margin-right: 0;
+				text-align: center;
+
+				.caption{
+					display: block;
+				}
+			}
+			.desc{
+				display: block;
+				text-align: center;
+			}
+		}
+	}
 }
 
 
@@ -1049,7 +1070,6 @@ footer{
 	}
 
 
-
 	.form-adapt-watch_price,
 	.form-adapt-low_price,
 	.form-adapt-error,
@@ -1081,6 +1101,16 @@ footer{
 	}
 
 
+	.form-adapt-order{
+		.form-type{
+			.text[name="code"]{
+				position: relative;
+				left: 10px;
+			}
+
+		}
+	}
+
 
 	.form-adapt-order_call,
 	.form-adapt-order
@@ -1088,6 +1118,13 @@ footer{
 
 		.text-input{
 			display: block;
+		}
+			
+		.prefix-code{
+			left: 50%;
+			margin-left: -80px;
+			position: absolute;
+			top: 25px;
 		}
 
 		.form-type{
@@ -1229,10 +1266,17 @@ footer{
 	.form-adapt-order_call,
 	.form-adapt-order
 	{
-
 		.cont-form label{
 			float: none;
 			margin-bottom: 5px;
+		}
+
+
+		.prefix-code{
+			left: 50%;
+			margin-left: 0;
+			position: static;
+			top: 25px;
 		}
 
 		.form-type{
@@ -1272,10 +1316,27 @@ footer{
 				text-align: left;
 			}
 		}
-		.text-input{
-		}
 	}
 
+
+	.form-adapt-order{
+		.prefix-code{
+			display: inline-block;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+
+		.form-type{
+			.text[name="phone"]{
+				width: calc(100% - 185px) !important;
+			}
+
+			.label-code{
+				margin-left: 43px !important;
+				margin-right: 90px !important;
+			}
+		}
+	}
 }
 
 
@@ -2276,6 +2337,15 @@ footer{
 			margin-right: 55px !important;
 		}
 	}
+
+
+	.form-adapt-order{
+		.form-type{
+			.text[name="phone"]{
+				width: calc(100% - 136px) !important;
+			}
+		}
+	}
 }
 
 
@@ -2358,6 +2428,16 @@ footer{
 		margin-left: 4px;
 		margin-right: 4px;
 	}
+
+	// furniture_page
+	.furniture_page{
+		.guide-list{
+			img{
+				max-width: 100%
+			}
+		}
+	}
+
 }
 
 
@@ -2494,6 +2574,11 @@ footer{
 
 	.mebelslid{
 		margin-left: -15px;
+	}
+
+
+	.tovar-sect .sect-title strong{
+		font-size: 21px;
 	}
 }
 

@@ -29,10 +29,10 @@
 	<meta name='keywords' content='Запомненное' />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />   
-	<link rel="stylesheet" href="/css/all.css">
-	<link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/tip-violet/tip-violet.css">
-	<link rel="stylesheet" href="/css/responsive.css">
+	<link rel="stylesheet" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/tip-violet/tip-violet.css" />
+	<link rel="stylesheet" href="/css/responsive.css" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
@@ -50,6 +50,7 @@
     <script src="/js/jquery.poshytip.min.js"></script>
     <script src="/js/script_catalog.js"></script>
     <script src="/js/script.js"></script>    
+    <script src="/js/engine.js"></script>
 </head>
 <? $this->load->view('templates/front/include/header', $header); ?>
 <? $this->load->view('templates/front/include/top_nav', $top_nav); ?>

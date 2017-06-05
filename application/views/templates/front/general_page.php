@@ -3,16 +3,20 @@
 <head>
 	<meta http-equiv='content-type' content='text/html; charset=utf-8' />
 	<title><?=$head['title']; ?></title>
-    <meta name='description' content='<?=$head['meta_d']; ?>' />
-	<meta name='keywords' content='<?=$head['meta_k']; ?>' />        
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="/css/all.css">
+	<meta name='description' content='<?=$head['meta_d']; ?>' />
+	<meta name='keywords' content='<?=$head['meta_k']; ?>' />
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/responsive.css" />
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
 	<script src="/js/jquery-1.9.1.min.js"></script>
 	<script src="/js/placeholder.js"></script>
+	<script src="/js/engine.js"></script>
 	<script>
-    
+	
 	$(document).ready(function() {
 		$('input, textarea').placeholder();
 		$(".head-trash .trash-title").mouseover(function(e){
@@ -32,7 +36,7 @@
 		}); 
 
 		$(".sub-nav li:has(ul)").addClass("with-drop");
-        
+		
 		if ($.browser.msie && $.browser.version == 10) {
   			$("html").addClass("ie10");
 		}
@@ -41,13 +45,13 @@
 </head>
 <? $this->load->view('templates/front/include/header', $header); ?>
 <? $this->load->view('templates/front/include/top_nav', $top_nav); ?>
-	<div class="main">
+	<div class="main furniture_page">
 		<div class="content-wrapper">
 			<section class="content">
-                <?=$breadcrumbs; ?>
+				<?=$breadcrumbs; ?>
 					
-                <? if($global_furniture) : ?>
-				<div class="tovar-sect">                
+				<? if($global_furniture) : ?>
+				<div class="tovar-sect">				
 					<div class="sect-title"><strong>Мебель</strong></div>
 					<? if ($top_text) : ?>
 						<br><br>
@@ -60,29 +64,29 @@
 					<? $fur = $furniture['cat'];
 					   $url = $furniture['url']; ?>
 						<li>
-				            <div class="left-block">
-				                <a href="/<?=$url;?>">
-				                    <div class="guide-picture">
-				                    <img alt="<?=$fur->picture_alt;?>" title="<?=$fur->picture_title;?>" src="/img/upload/mini/<?=$fur->picture;?>">
-				                    </div>
-				                    <?=$fur->caption;?>
-				                </a>
-				            </div>
-				            <h2><?=$fur->caption;?></h2>
-				            <span><?=$fur->description;?></span>
+							<div class="left-block">
+								<a href="/<?=$url;?>">
+									<div class="guide-picture">
+										<img alt="<?=$fur->picture_alt;?>" title="<?=$fur->picture_title;?>" src="/img/upload/mini/<?=$fur->picture;?>">
+									</div>
+									<span class="caption"><?=$fur->caption;?></span>
+								</a>
+							</div>
+							<h2><?=$fur->caption;?></h2>
+							<span class="desc"><?=$fur->description;?></span>
 
-			            </li><div style="clear: both;"></div>
+						</li><div style="clear: both;"></div>
 					<? endforeach; ?>
 					<div style="clear: both;">
 					</ul>
 				</div>
-                <? endif; ?>
+				<? endif; ?>
 				<article>
 					<center><?=$bottom_text; ?></center>
 				</article>
 			</section>
 		</div>
 	<? $this->load->view('templates/front/include/left4', $left); ?>
-    <? $this->load->view('templates/front/include/right2', $right); ?>	
+	<? $this->load->view('templates/front/include/right2', $right); ?>	
 	</div>
 	<? $this->load->view('templates/front/include/footer', $footer); ?>

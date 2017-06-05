@@ -15,6 +15,7 @@
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
+	<script src="/js/engine.js"></script>
 </head>
 <? $this->load->view('templates/front/include/header', $header); ?>
 <? $this->load->view('templates/front/include/top_nav', $top_nav); ?>
