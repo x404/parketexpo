@@ -26,7 +26,7 @@
 	text-align: center;
 	top: 5px;
 	width: 40px;
-	z-index: 99;
+	z-index: 1000;
 	.icon-bar{
 		background-color: #797979;
 		display: block;
@@ -66,16 +66,16 @@ footer{
 
 .mobile-header{
 	background: #fff;
+	box-shadow: 0 5px 15px #ccc;
+	display: none;
 	font-size: 18px;
 	left: 0;
-	display: none;
 	padding: 10px 0;
 	position: fixed;
 	text-align: center;
 	top: 0;
 	width: 100%;
-	z-index: 98;
-	box-shadow: 0 5px 15px #ccc;
+	z-index: 999;
 
 	.metro{
 		font-size: 18px;
@@ -2147,6 +2147,15 @@ footer{
 		padding-left: 0;
 		width: 110%;
 	}
+
+
+	.cat-spisok .item-zakaz{
+		width: 100%;
+		.text-input,
+		.gray-button-40{
+			float: none;
+		}
+	}
 }
 
 
@@ -2502,6 +2511,16 @@ footer{
 	header .head-info-holder{
 		padding-top: 0;
 	}
+
+
+	header .logo{
+		width: 90%;
+	}
+
+	.mobile-trash{
+		margin-top: 0;
+	}
+
 	#page-wrapper{
 		min-width: 0;
 		max-width: 100%;
@@ -2570,5 +2589,14 @@ footer{
 	.tovar-sect .sect-title strong{
 		font-size: 21px;
 	}
+
+
+	.form-adapt-order_call{
+		.form-type{
+			.text[name="phone"]{
+				width: calc(100% - 110px) !important;
+			}
+		}
+	}	
 }
 
