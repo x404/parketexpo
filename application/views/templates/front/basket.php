@@ -221,9 +221,9 @@
 				</div>
                     <? else : ?>
                         <? if($err == '10') : ?>
-                            <div class="boxed"><h2>Ваш заказ принят! Наш оператор свяжется с вами в ближайшее время.</h2></div>
+                            <div class="boxed boxed-thank"><h2>Ваш заказ принят! Наш оператор свяжется с вами в ближайшее время.</h2></div>
                         <? else : ?>
-                            <div class="boxed"><h2>Ваша корзина пуста!</h2></div>
+                            <div class="boxed boxed-thank"><h2>Ваша корзина пуста!</h2></div>
                         <? endif; ?>
                     <? endif; ?>
 				

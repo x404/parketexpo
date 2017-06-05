@@ -127,6 +127,10 @@ footer .footer-soc {
   display: block !important;
 }
 
+.boxed-thank {
+  padding: 20px 15px;
+}
+
 @media (min-width: 200px) {
   body {
     min-width: 0;
@@ -179,7 +183,7 @@ footer .footer-soc {
 }
 
 @media (max-width: 1470px) {
-  .basket .itogo {
+  .basket_page .itogo {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -187,10 +191,10 @@ footer .footer-soc {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .basket .pereschet {
+  .basket_page .pereschet {
     margin-left: 0;
   }
-  .basket .price-itogo {
+  .basket_page .price-itogo {
     width: 380px;
   }
 }
@@ -225,17 +229,28 @@ footer .footer-soc {
     margin-right: 0 !important;
     display: inline !important;
   }
-  .basket .price-itogo {
+  .basket_page .price-itogo {
     width: 360px;
   }
-  .basket .itogo {
+  .basket_page .itogo {
     padding-right: 20px;
   }
-  .basket .pereschet {
+  .basket_page .pereschet {
     font-size: 18px;
   }
-  .basket .price-itogo {
+  .basket_page .price-itogo {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .basket_page .itogo {
+    padding-left: 32px;
+    padding-right: 42px;
+    width: auto;
+  }
+  .basket_page .price-itogo {
+    width: auto;
   }
 }
 
@@ -314,10 +329,10 @@ footer .footer-soc {
     min-width: 0;
     text-align: center;
   }
-  .basket .itogo {
+  .basket_page .itogo {
     padding-left: 30px;
   }
-  .basket .price-itogo {
+  .basket_page .price-itogo {
     text-align: left;
     width: auto;
   }
@@ -404,11 +419,11 @@ footer .footer-soc {
   .form-type .text {
     width: 90%;
   }
-  .basket .cont-form .row {
-    padding-left: 15px;
+  .basket_page .cont-form .row {
+    padding-left: 30px;
     padding-right: 15px;
   }
-  .basket .cont-form label {
+  .basket_page .cont-form label {
     font-size: 16px;
   }
 }
@@ -581,8 +596,11 @@ footer .footer-soc {
   .basket_page .pereschet {
     font-size: 16px;
   }
-  .basket_page .backet tr td:first-child {
+  .basket_page aside.right-sidebar {
     display: none;
+  }
+  .basket_page section.content {
+    margin-right: 0;
   }
 }
 
@@ -739,6 +757,16 @@ footer .footer-soc {
     float: left;
     margin-top: 15px;
   }
+  .basket_page .backet-form .green-button-40 {
+    margin: 10px auto 20px auto;
+  }
+  .basket_page .lab-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .boxed-thank h2 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 925px) {
@@ -823,6 +851,13 @@ footer .footer-soc {
   .mebelslid .caroufredsel_wrapper {
     height: 313px !important;
     max-width: 400px;
+  }
+  .backet .minus,
+  .backet .plus {
+    display: none;
+  }
+  .backet .kolvo-box {
+    width: auto;
   }
 }
 
@@ -1090,6 +1125,14 @@ footer .footer-soc {
   .basket_page .backet tr td:first-child {
     display: table-cell;
   }
+  .basket_page .backet thead td:last-child {
+    text-indent: -9999em;
+    width: 25px;
+  }
+  .boxed-thank h2 {
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1143,6 +1186,12 @@ footer .footer-soc {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .basket_page .backet tr td:first-child {
+    display: none;
   }
 }
 
@@ -1255,6 +1304,13 @@ footer .footer-soc {
   .card2 .carouselo div.slide .im {
     max-width: 320px;
   }
+  .basket_page .form-type textarea,
+  .basket_page .form-type .text {
+    width: calc(100% - 28px);
+  }
+  .basket_page .cont-form .row {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1330,6 +1386,17 @@ footer .footer-soc {
   }
   .cat-spisok .item-images {
     max-width: 100%;
+  }
+  .basket_page .itogo {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .basket_page .backet-form .pereschet {
+    border-bottom: none;
+    margin-top: 15px;
+    text-decoration: underline;
   }
 }
 
@@ -1459,6 +1526,11 @@ footer .footer-soc {
   }
   .carouselo-c div.thumbnails img {
     float: none;
+  }
+  .basket_page .big-text-type {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: justify;
   }
 }
 

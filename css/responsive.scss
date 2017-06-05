@@ -130,6 +130,11 @@ footer{
 }
 
 
+
+.boxed-thank{
+	padding: 20px 15px;
+}
+
 @media (min-width: 200px){
 	body{
 		min-width: 0;
@@ -198,7 +203,7 @@ footer{
 
 
 @media (max-width: 1470px){
-	.basket{
+	.basket_page{
 		.itogo{
 			display: flex;
 			justify-content: space-between;
@@ -210,7 +215,11 @@ footer{
 		.price-itogo{
 			width: 380px;
 		}
+		.backet-form .price-itogo{
+			// width: auto;
+		}
 	}	
+
 }
 
 
@@ -256,7 +265,7 @@ footer{
 	}
 
 
-	.basket{
+	.basket_page{
 		.price-itogo{
 			width: 360px;
 		}
@@ -272,6 +281,21 @@ footer{
 
 		.price-itogo{
 			font-size: 22px;
+		}
+	}
+}
+
+
+@media (max-width: 1360px){
+	.basket_page{
+		.itogo{
+			padding-left: 32px;
+			padding-right: 42px;
+			width: auto;
+		}
+
+		.price-itogo{
+			width: auto;
 		}
 	}
 }
@@ -364,7 +388,7 @@ footer{
 		text-align: center;
 	}
 
-	.basket{
+	.basket_page{
 		.itogo{
 			padding-left: 30px;
 		}
@@ -398,8 +422,6 @@ footer{
 			order: 2;
 		}
 	}
-
-
 
 	.cat-spisok .item-zakaz{
 		padding-top: 0;
@@ -466,10 +488,10 @@ footer{
 		}
 	}
 
-	.basket{
+	.basket_page{
 		.cont-form{
 			.row{
-				padding-left: 15px;
+				padding-left: 30px;
 				padding-right: 15px;
 			}
 			label{
@@ -613,6 +635,8 @@ footer{
 		height: auto;
 		padding-bottom: 12px;
 	}
+
+
 }
 
 
@@ -680,9 +704,20 @@ footer{
 			font-size: 16px;
 		}
 		.backet tr td:first-child{
+			// display: none;
+		}
+
+		aside.right-sidebar{
 			display: none;
 		}
+
+		section.content{
+			margin-right: 0;
+		}
 	}
+
+	
+
 
 }
 
@@ -866,6 +901,8 @@ footer{
 		left: 4px;
 	}
 
+
+	// basket
 	.basket_page{
 		.itogo{
 			flex-wrap: wrap;
@@ -886,9 +923,27 @@ footer{
 			}
 		}
 
-		.backet-form .smotr{
-			float: left;
-			margin-top: 15px;
+		.backet-form{
+			.smotr{
+				float: left;
+				margin-top: 15px;
+			}
+			.green-button-40{
+				margin: 10px auto 20px auto;
+			}
+		}
+
+
+		.lab-info{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+
+
+	.boxed-thank{
+		h2{
+			font-size: 18px;
 		}
 	}
 }
@@ -978,9 +1033,6 @@ footer{
 			margin-right: auto !important;
 		}
 	}
-
-
-
 }
 
 
@@ -1014,6 +1066,17 @@ footer{
 		.caroufredsel_wrapper{
 			height: 313px !important;
 			max-width: $w;
+		}
+	}
+
+	.backet{
+		.minus,
+		.plus{
+			display: none;
+		}
+
+		.kolvo-box{
+			width: auto;
 		}
 	}
 }
@@ -1366,8 +1429,30 @@ footer{
 	}
 
 	
-	.basket_page .backet tr td:first-child{
-		display: table-cell;
+	// basker
+	.basket_page{
+		.backet tr td:first-child{
+			display: table-cell;
+		}
+
+		.backet{
+			.minus,
+			.plus{
+				// display: inline-block;
+			}
+
+			thead td:last-child{
+				text-indent: -9999em;
+				width: 25px;
+			}
+		}
+	}
+
+	.boxed-thank{
+		h2{
+			margin-bottom: 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -1425,6 +1510,13 @@ footer{
 		text-align: center;
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+}
+
+
+@media (max-width: 550px){
+	.basket_page .backet tr td:first-child{
+		display: none;
 	}
 }
 
@@ -1581,6 +1673,19 @@ footer{
 			}
 		}
 	}
+
+
+	// backet
+	.basket_page{
+		.form-type textarea,
+		.form-type .text{
+			width: calc(100% - 28px);
+		}
+
+		.cont-form .row{
+			padding-left: 15px;
+		}
+	}
 }
 
 
@@ -1679,6 +1784,20 @@ footer{
 
 	.cat-spisok .item-images{
 		max-width: 100%;
+	}
+
+
+	.basket_page{
+		.itogo{
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.backet-form .pereschet{
+			border-bottom: none;
+			margin-top: 15px;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -1857,6 +1976,15 @@ footer{
 	// sales
 	.carouselo-c  div.thumbnails img{
 		float: none;
+	}
+
+
+	.basket_page{
+		.big-text-type{
+			font-size: 15px;
+			line-height: 1.2;
+			text-align: justify;
+		}
 	}
 }
 
