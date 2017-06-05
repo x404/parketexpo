@@ -1,15 +1,15 @@
 <div class="mobile-banners">
-	<? foreach($banners as $d) : ?>
+	<? if (isset($banners)) { 
+	foreach($banners as $d) : ?>
 		<? if($d->page_location == 1) : ?>
 			<a href="<?=$d->url?>" class="text-banner">
 				<img src="/img/upload/mini/<?=$d->picture ?>" width="211" alt="">
 			</a>
 		<? endif; ?>
 	<? endforeach; ?>
+	<? } ?>
 </div>
-
-
-<footer>
+	<footer>
 		<div class="footer-top"></div>
 		<div class="footer-box">
 			<ul class="footer-nav">
@@ -68,7 +68,6 @@
 		</a>
 	</footer>
 </div>
-
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script type="text/javascript">
