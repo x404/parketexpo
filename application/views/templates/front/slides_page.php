@@ -28,6 +28,7 @@
 	<script src="/js/jquery.poshytip.min.js"></script>
 	<script src="/js/script_catalog.js"></script>
 	<script src="/js/script.js"></script>	
+	<script src="/js/engine.js"></script>
 
 	<script>	
 	$(document).ready(function() {

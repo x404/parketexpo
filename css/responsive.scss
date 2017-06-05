@@ -535,7 +535,7 @@ footer{
 				padding-right: 15px;
 			}
 			label{
-				font-size: 16px;				
+				font-size: 16px;
 			}
 		}
 	}
@@ -802,10 +802,6 @@ footer{
 		.pereschet{
 			font-size: 16px;
 		}
-		.backet tr td:first-child{
-			// display: none;
-		}
-
 		aside.right-sidebar{
 			display: none;
 		}
@@ -1308,8 +1304,8 @@ footer{
 			}
 
 			.label-code{
-				width: auto;
 				display: inline;
+				width: auto;
 			}
 			.label-phone{
 				position: static;
@@ -1740,11 +1736,6 @@ footer{
 		}
 
 		.backet{
-			.minus,
-			.plus{
-				// display: inline-block;
-			}
-
 			thead td:last-child{
 				text-indent: -9999em;
 				width: 25px;
@@ -1820,7 +1811,7 @@ footer{
 
 @media (max-width: 550px){
 	.basket_page .backet tr td:first-child{
-		display: none;
+		// display: none;
 	}
 }
 
@@ -2286,7 +2277,6 @@ footer{
 			line-height: 1.2;
 			text-align: justify;
 		}
-
 	}
 
 

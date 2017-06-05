@@ -15,6 +15,7 @@
 	<script src="/js/jquery-1.9.1.min.js"></script>
 	<script src="/js/jquery-migrate-1.1.1.js"></script>
 	<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="/js/engine.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 

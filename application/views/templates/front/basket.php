@@ -20,9 +20,16 @@
 	<script src="/js/jcf.checkbox.js"></script>
 	<script src="/js/jcf.select.js"></script>
     <!-- <script src="/js/script_basket.js"></script> -->
+
+	<script src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="/js/jquery.pikachoose.js"></script>
+	<script src="/js/jquery.lightbox_me.js"></script>
+    <script src="/js/jquery.poshytip.min.js"></script>
+
     <script src="/js/script.js"></script>
     <script src="/js/script_catalog.js"></script>
 	<script src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
 	<script src="/js/engine.js"></script>
 
 </head>
