@@ -137,6 +137,20 @@ footer{
 	padding: 20px 15px;
 }
 
+
+.main-full{
+	section.content{
+		margin-left: 0;
+	}
+}
+
+
+.form-adapt-order{
+	.form-type .text[name="phone"]{
+		width: 757px !important;
+	}
+}
+
 @media (min-width: 200px){
 	body{
 		min-width: 0;
@@ -403,6 +417,13 @@ footer{
 		margin-left: 225px;
 	}
 
+	.main-full{
+		section.content{
+			margin-left: 0;
+		}
+	}
+
+
 
 	.item-list li{
 		padding-left: 2px;
@@ -553,7 +574,7 @@ footer{
 		}
 
 		.form-type .text[name="phone"]{
-			width: calc(100% - 205px) !important
+			width: calc(100% - 226px) !important
 		}
 	}	
 }
@@ -739,7 +760,7 @@ footer{
 		}
 
 		.form-type .text[name="phone"]{
-			width: calc(100% - 174px) !important
+			width: calc(100% - 196px) !important
 		}
 	}	
 
@@ -945,7 +966,7 @@ footer{
 	.form-adapt-order
 	{
 		.form-type .text[name="phone"]{
-			width: calc(100% - 160px) !important
+			width: calc(100% - 184px) !important
 		}
 	}
 }
@@ -1100,8 +1121,8 @@ footer{
 	.form-adapt-order{
 		.form-type{
 			.text[name="code"]{
-				position: relative;
-				left: 10px;
+				// position: relative;
+				// left: 10px;
 			}
 
 		}
@@ -1113,60 +1134,60 @@ footer{
 	{
 
 		.text-input{
-			display: block;
+			// display: block;
 		}
 			
 		.prefix-code{
-			left: 50%;
-			margin-left: -80px;
-			position: absolute;
-			top: 25px;
+			// left: 50%;
+			// margin-left: -80px;
+			// position: absolute;
+			// top: 25px;
 		}
 
 		.form-type{
 			textarea, .text{
-				width: calc(100% - 32px)
+				// width: calc(100% - 32px)
 			}
 
 			.text-wrap{
-				position: relative;
+				// position: relative;
 				br{
-					display: none;
+					// display: none;
 				}
 			}
 			.text[name="code"],
 			.text[name="phone"]
 			{
-				margin-top: 3px;
-				display: block;
-				float: none;
-				margin-left: auto !important;
-				margin-right: auto !important;
+				// margin-top: 3px;
+				// display: block;
+				// float: none;
+				// margin-left: auto !important;
+				// margin-right: auto !important;
 			}
 			.text[name="code"]{
-				margin-bottom: 10px;
+				// margin-bottom: 10px;
 			}
 
 			.text[name="phone"]{
-				margin-top: 30px;
-				width: calc(100% - 32px) !important;
+				// margin-top: 30px;
+				width: calc(100% - 180px) !important;
 			}
 
 			.label-code{
-				display: block;
-				margin-right: 0;
-				margin-left: 0 !important;
-				text-align: center;
-				width: 100%;
+				// display: block;
+				// margin-right: 0;
+				// margin-left: 0 !important;
+				// text-align: center;
+				// width: 100%;
 			}
 
 			.label-phone{
-				left: 0;
-				margin-right: 0;
-				position: absolute;
-				text-align: center;
-				top: 66px;
-				width: 100%;
+				// left: 0;
+				// margin-right: 0;
+				// position: absolute;
+				// text-align: center;
+				// top: 66px;
+				// width: 100%;
 			}
 		}
 	}
@@ -1299,7 +1320,7 @@ footer{
 			}
 
 			.text[name="phone"]{
-				margin-top: 3px;
+				// margin-top: 3px;
 				width: calc(100% - 160px) !important;
 			}
 
@@ -1324,12 +1345,12 @@ footer{
 
 		.form-type{
 			.text[name="phone"]{
-				width: calc(100% - 185px) !important;
+				width: calc(100% - 229px) !important;
 			}
 
 			.label-code{
-				margin-left: 43px !important;
-				margin-right: 90px !important;
+				margin-left: 34px !important;
+				margin-right: 96px !important;
 			}
 		}
 	}
@@ -1519,6 +1540,14 @@ footer{
 		.caroufredsel_wrapper{
 			max-width: $w;
 			height: 274px !important;
+		}
+	}
+
+	.form-adapt-order{
+		.form-type{
+			.text[name="phone"]{
+				width: calc(100% - 217px) !important;
+			}
 		}
 	}
 }
@@ -1926,6 +1955,14 @@ footer{
 		font-size: 21px;
 		padding-right: 10px;
 	}
+
+	.form-adapt-order{
+		.form-type{
+			.text[name="phone"]{
+				width: calc(100% - 198px) !important;
+			}
+		}
+	}
 }
 
 
@@ -2238,9 +2275,7 @@ footer{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-
 }
-
 
 
 @media (max-width: 375px){
@@ -2273,10 +2308,6 @@ footer{
 
 
 	.boxed .boxed-title{
-		text-align: center;
-		h1{
-			padding-left: 10px;
-		}
 	}
 
 	.boxed-content{
@@ -2291,11 +2322,19 @@ footer{
 	.boxed{
 		.boxed-title{
 			padding-top: 10px;
+			text-align: center;
 			strong{
 				margin-left: 0;
 			}
+			h1{
+				padding-left: 10px;
+				padding-top: 7px;
+			}
 		}
 	}
+
+
+
 
 	.cont-form{
 		label{
@@ -2349,6 +2388,10 @@ footer{
 		}
 	}
 
+
+	.form-adapt-order .form-type .label-code{
+		margin-right: 50px !important;
+	}
 
 	.form-adapt-watch_price,
 	.form-adapt-low_price,

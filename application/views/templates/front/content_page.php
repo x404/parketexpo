@@ -105,6 +105,12 @@ if($url_for_form_arr[0] == 'where_to_buy')
 {
 	if (!$banners) $class_main_full = 'main-full';
 }
+
+if($url_for_form_arr[0] == 'order')
+{
+	if (!$banners) $class_main_full = 'main-full';
+}
+
 ?>
 	<div class="main <? echo $class_for_form.' '.$class_main_full; ?>">
 		<div class="content-wrapper">
