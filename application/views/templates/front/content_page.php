@@ -89,7 +89,7 @@ $url_for_form_arr = explode('/', $url_for_form);
 array_shift($url_for_form_arr);
 	//echo '<pre>'; print_r($url_for_form_arr); echo '</pre>';
 
-	 $class_for_form = '';
+$class_for_form = '';
 if($url_for_form_arr[0] == 'order') $class_for_form = 'form-adapt-order';
 if($url_for_form_arr[0] == 'error_report') $class_for_form = 'form-adapt-error';
 if($url_for_form_arr[0] == 'order_call') $class_for_form = 'form-adapt-order_call';
@@ -99,8 +99,14 @@ if($url_for_form_arr[0] == 'claims') $class_for_form = 'form-adapt-claims';
 $watch_price_entries = substr_count($url_for_form_arr[0],'watch_price');
 	//echo $watch_price_entries;
 if($watch_price_entries > 0) $class_for_form = 'form-adapt-watch_price';
+
+$class_main_full = '';
+if($url_for_form_arr[0] == 'where_to_buy')
+{
+	if (!$banners) $class_main_full = 'main-full';
+}
 ?>
-	<div class="main <? echo $class_for_form; ?>">
+	<div class="main <? echo $class_for_form.' '.$class_main_full; ?>">
 		<div class="content-wrapper">
 			<section class="content">
                 <?=$breadcrumbs; ?>
@@ -129,7 +135,7 @@ if($watch_price_entries > 0) $class_for_form = 'form-adapt-watch_price';
 			</section>
 		</div>
 		
-	<? $this->load->view('templates/front/include/left2',$left); ?>
+	<?  if($banners) $this->load->view('templates/front/include/left2',$left); ?>
     <? $this->load->view('templates/front/include/right2',$right); ?>	
     </div>
 	<? $this->load->view('templates/front/include/footer',$footer); ?>
